@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Industriel</title>
+    <style>
+        /* Général */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F1CBB5;
+            color: #333;
+        }
+        h1 {
+            margin: 0;
+            padding: 0;
+            color: #F4F4F4;
+        }
+        h2 {
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: #356D65;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        /* Section générale */
+        section {
+            padding: 4em 10%;
+            margin: 20px 0;
+        }
+
+        /* Projets */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .project-card {
+            background-color: #F7ECDF;
+            border: 2px solid black;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            padding: 20px;
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+            border-color: #0056b3;
+        }
+        .project-card h3 {
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+        .project-card p {
+            color: #666;
+        }
+        .project-card .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #356D65;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .project-card .btn:hover {
+            background-color: #003f74;
+        }
+
+        /* Compétences */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .skill {
+            background-color: #F7ECDF;
+            color: black;
+            padding: 15px 30px;
+            border: 2px solid black;
+            border-radius: 30px;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        /* Formulaire de contact */
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 12px 20px;
+            background-color: #356D65;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #003f74;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #356D65;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portfolio de Teddy Le Meur</h1>
+        <p>Bienvenue sur mon portofolio, vous pourrez découvrir certains de mes projets et me contacter ci-dessous.</p>
+    </header>
+
+    <!-- À propos -->
+    <section>
+        <h2>À propos de moi</h2>
+        <br>
+        <p>Je m’appelle Teddy Le Meur, je suis né le 21 janvier 2004, J’ai donc maintenant 21 ans. Je suis actuellement étudiant en troisième année dans un BUT (Bachelor Universitaire Technologique), le BUT GIM (Génie Industriel et Maintenance) à l’IUT de Lorient.
+        <br>
+        <br>
+Je pratique du handball en club depuis mes 11 ans, cela m’a permis de développer de la combativité et une capacité à travailler en équipe, grâce au handball j’arrive assez facilement à créer une cohésion dans un groupe. J’ai été entraîneur de jeunes handballeurs et handballeuses de 4 à 13 ans pendant 3 ans. J’ai également été arbitre officiel de handball durant 2 ans et champion de France avec l’équipe de l’IUT.
+<br>
+<br>
+Je parle couramment anglais, j’ai développé cette compétence en discutant avec mes amis américains et canadiens régulièrement.
+<br>
+<br>
+J’ai fait un stage chez Brunet à Caudan lors de ma deuxième année et suis actuellement en alternance chez Coriolis Composites à Quéven.
+<br>
+<br>
+Je joue régulièrement aux jeux-vidéos, cela m’a permis de développer une grande capacité de concentration et grâce à ça, je peux facilement discerner plusieurs mouvements à la fois.</p>
+    </section>
+    <hr>
+        <!-- Expériences -->
+    <section>
+        <h2>Mes Expériences</h2>
+        <br>
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://www.brunet-groupe.fr/wp-content/uploads/2022/07/BRUNET_2023_CYAN.svg" alt="Projet 1">
+                <h3>02/2024-04/2024: Stage de 10 semaines chez Brunet Snere à Caudan</h3>
+                <p>Stage de 10 semaines durant lequel j'avais pour projet de réaliser une armoire électrique servant de banc d'essai basse tension pour formation.</p>
+                <a href="#" class="btn">Voir l'expérience</a>
+            </div>
+            <br>
+            <div class="projects">
+            <div class="project-card">
+                <img src="https://www.coriolis-composites.com/wp-content/uploads/2024/02/coriolis-logo@2x-300x46.png" alt="Projet 1">
+                <h3>09/2024-08/2025: Alternance d'un an chez Coriolis Composites à Queven</h3>
+                <p>Alternance d'un an durant laquelle j'avais pour projet d'organiser les obsolesences des machines ainsi que celui de réaliser une gamme de maintenance de la nouvelle machine.</p>
+                <a href="#" class="btn">Voir l'expérience</a>
+            </div>
+    </section>
+    <hr>
+    <!-- Projets -->
+    <section>
+        <h2>Mes Projets</h2>
+        <br>
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://i.ibb.co/JFq3bVWj/Map205.jpg" alt="Projet 1">
+                <h3>Projet 1: Programmation d'une maquette d'assemblage de pièces</h3>
+                <p>Programmation d'une maquette s'assemblage de pièces en langage LADER et STRUCTRÉ, en mode automatique et manuel avec IHM.</p>
+                <a href="#" class="btn">Voir le projet</a>
+            </div>
+            <div class="project-card">
+                <img src="https://qelectrotech.org/test/images-design/logo-qet.svg" alt="Projet 2">
+                <h3>Projet 2: Réalisation et modification de schémas électriques</h3>
+                <p>Lors de ce projet, j'ai réalisé et modifié des schémas électriques à partir dun cahier es charges.</p>
+                <a href="#" class="btn">Voir le projet</a>
+            </div>
+            <div class="project-card">
+                <img src="https://upload.wikimedia.org/wikipedia/fr/d/d2/SolidWorks_Logotype_RGB_Red.png" alt="Projet 3">
+                <h3>Projet 3: SModélisation de pièces et assemblages sur SolidWorks</h3>
+                <p>Lors de ce projet, j'ai modélisé des pièces avant de les assembler pour réaliser un système complet et fonctionnel.</p>
+                <a href="#" class="btn">Voir le projet</a>
+            </div>
+        </div>
+    </section>
+<hr>
+    <!-- Compétences -->
+    <section>
+        <h2>Mes Compétences</h2>
+        <br>
+        <div class="skills">
+            <div class="skill">Ingénierie des systèmes</div>
+            <div class="skill">Automatisation</div>
+            <div class="skill">Gestion de projet</div>
+            <div class="skill">Logiciels du groupe office</div>
+            <div class="skill">Organisation de maintenance</div>
+            <div class="skill">Optimisation des processus</div>
+        </div>
+    </section>
+<hr>
+    <!-- Contact -->
+    <section>
+        <h2>Contactez-moi</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea rows="4" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <p>Vous pouvez également me retrouver sur :</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/teddy-le-meur/" target="_blank">Mon profil LinkedIn</a></li>
+            <li><a href="
+                https://publuu.com/flip-book/824491/1813720" target="_blank">Télécharger mon CV</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Portfolio de Teddy Le Meur. Tous droits réservés.</p>
+        <p><a href="https://www.linkedin.com/in/teddy-le-meur/" target="_blank">LinkedIn</a> | <a href="
+                https://publuu.com/flip-book/824491/1813720" target="_blank">Mon CV</a></p>
+    </footer>
+
+</body>
+</html>
